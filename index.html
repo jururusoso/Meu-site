@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Agenda</h1>
+    </header>
+    <main>
+        <section class="add-task">
+            <h2>Adicionar Compromisso</h2>
+            <form id="task-form">
+                <label for="task-title">Título:</label>
+                <input type="text" id="task-title" required>
+                
+                <label for="task-date">Data:</label>
+                <input type="date" id="task-date" required>
+                
+                <label for="task-time">Hora:</label>
+                <input type="time" id="task-time" required>
+                
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section class="task-list">
+            <h2>Meus Compromissos</h2>
+            <ul id="tasks">
+                <!-- Os compromissos serão adicionados aqui -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Agenda. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
